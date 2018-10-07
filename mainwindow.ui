@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>703</width>
-    <height>487</height>
+    <width>705</width>
+    <height>481</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -129,7 +129,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_5">
         <property name="text">
-         <string>预测报警</string>
+         <string>监测报警</string>
         </property>
        </widget>
       </item>
@@ -149,7 +149,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_6">
         <property name="text">
-         <string>智能监测</string>
+         <string>智能预测</string>
         </property>
        </widget>
       </item>
@@ -184,7 +184,7 @@
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="geometry">
       <rect>
-       <x>100</x>
+       <x>110</x>
        <y>0</y>
        <width>591</width>
        <height>431</height>
@@ -213,40 +213,30 @@
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>50</y>
+         <y>10</y>
          <width>81</width>
          <height>16</height>
         </rect>
        </property>
        <property name="text">
-        <string>传感器id查询：</string>
+        <string>传感器id：</string>
        </property>
       </widget>
       <widget class="QTableView" name="tableView">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>170</y>
-         <width>256</width>
-         <height>192</height>
+         <x>10</x>
+         <y>100</y>
+         <width>571</width>
+         <height>311</height>
         </rect>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>50</y>
-         <width>113</width>
-         <height>20</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_2">
-       <property name="geometry">
-        <rect>
-         <x>300</x>
-         <y>40</y>
+         <x>20</x>
+         <y>30</y>
          <width>113</width>
          <height>20</height>
         </rect>
@@ -255,14 +245,116 @@
       <widget class="QPushButton" name="pushButton_2">
        <property name="geometry">
         <rect>
-         <x>440</x>
-         <y>110</y>
+         <x>20</x>
+         <y>70</y>
          <width>75</width>
          <height>23</height>
         </rect>
        </property>
        <property name="text">
         <string>增加传感器</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>传感器类型：</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>30</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vibration</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Temperature</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Acceleration</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>10</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>传感器名字：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>10</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>采集通道：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>30</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>30</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>筛选</string>
        </property>
       </widget>
      </widget>
@@ -289,10 +381,81 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>703</width>
+     <width>705</width>
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>数据配置</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>数据导入</string>
+     </property>
+     <addaction name="actionador"/>
+     <addaction name="actionasd"/>
+     <addaction name="actionad"/>
+     <addaction name="actionMatlab"/>
+    </widget>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>数据导出</string>
+     </property>
+     <addaction name="actionpdf"/>
+     <addaction name="actionpng"/>
+    </widget>
+    <addaction name="menu_4"/>
+    <addaction name="menu_6"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>数据计算</string>
+    </property>
+    <addaction name="actionFFT"/>
+    <addaction name="actionPSD"/>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>监测报警</string>
+    </property>
+    <addaction name="actionasda"/>
+    <addaction name="actionji"/>
+    <addaction name="action_7"/>
+    <addaction name="action_8"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>智能预测</string>
+    </property>
+    <addaction name="action_9"/>
+    <addaction name="action_10"/>
+    <addaction name="actionguzhan"/>
+    <addaction name="actionasd_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>传感器管理</string>
+    </property>
+    <addaction name="action_11"/>
+    <addaction name="actionashd"/>
+   </widget>
+   <widget class="QMenu" name="menu_9">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionaas"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_8"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_9"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -303,6 +466,136 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionFFT">
+   <property name="text">
+    <string>FFT</string>
+   </property>
+  </action>
+  <action name="actionPSD">
+   <property name="text">
+    <string>PSD</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>均值方差</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>回归</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>滤波</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>相关性分析</string>
+   </property>
+  </action>
+  <action name="actionze">
+   <property name="text">
+    <string>增加传感器</string>
+   </property>
+  </action>
+  <action name="actionador">
+   <property name="text">
+    <string>txt数据导入</string>
+   </property>
+  </action>
+  <action name="actionasd">
+   <property name="text">
+    <string>dat数据导入</string>
+   </property>
+  </action>
+  <action name="actionad">
+   <property name="text">
+    <string>csv数据导入</string>
+   </property>
+  </action>
+  <action name="actionMatlab">
+   <property name="text">
+    <string>Matlab数据导入</string>
+   </property>
+  </action>
+  <action name="actionshan">
+   <property name="text">
+    <string>删除传感器</string>
+   </property>
+  </action>
+  <action name="actionchau">
+   <property name="text">
+    <string>传感器配置</string>
+   </property>
+  </action>
+  <action name="actionpdf">
+   <property name="text">
+    <string>pdf数据格式导出</string>
+   </property>
+  </action>
+  <action name="actionpng">
+   <property name="text">
+    <string>图片格式导出</string>
+   </property>
+  </action>
+  <action name="actionasda">
+   <property name="text">
+    <string>监测阈值设定</string>
+   </property>
+  </action>
+  <action name="actionji">
+   <property name="text">
+    <string>定义开关方式</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>设置监测权限</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>报警复位功能</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>状态检测</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>故障诊断</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>增加传感器</string>
+   </property>
+  </action>
+  <action name="actionashd">
+   <property name="text">
+    <string>删除传感器</string>
+   </property>
+  </action>
+  <action name="actionaas">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionguzhan">
+   <property name="text">
+    <string>故障预测</string>
+   </property>
+  </action>
+  <action name="actionasd_3">
+   <property name="text">
+    <string>故障评估</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
