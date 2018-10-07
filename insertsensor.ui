@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>insertSensor</class>
+ <widget class="QDialog" name="insertSensor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>302</width>
+    <height>331</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>0</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加传感器参数</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认添加</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>290</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消添加</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>281</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string>1.传感器类型：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit_11"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string>2.传感器名字：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit_12"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>3.坐标轴：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEdit_13"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_15">
+      <property name="text">
+       <string>4.采样频率：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lineEdit_14"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_16">
+      <property name="text">
+       <string>5.电压下限：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineEdit_15"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_17">
+      <property name="text">
+       <string>6.电压上限：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="lineEdit_16"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_18">
+      <property name="text">
+       <string>7.分辨率：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="lineEdit_17"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_19">
+      <property name="text">
+       <string>8.电压值对应测量值比较：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="lineEdit_18"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_20">
+      <property name="text">
+       <string>9.测量值单位：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="lineEdit_19"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_21">
+      <property name="text">
+       <string>10.备注：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLineEdit" name="lineEdit_20"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
