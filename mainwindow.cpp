@@ -7,8 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //显示
-   /* QString name=ui->namelineEdit->text();//收件人姓名
+    //显示查询的结果
+    QString name=ui->namelineEdit->text();//收件人姓名
     tel=ui->tellineEdit->text();//获取电话信息
     QString danhao=ui->numlineEdit->text();//获取单号信息
     QSqlQueryModel *model = new QSqlQueryModel;
@@ -38,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //使其不可编辑
     ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
-    */
+
 }
 
 MainWindow::~MainWindow()
@@ -60,7 +60,7 @@ void MainWindow::on_showButton_clicked()
 {
      ui->stackedWidget->setCurrentIndex(2);
 }
-//增加传感器
+//添加传感器信息对话框
 void MainWindow::on_pushButton_2_clicked()
 {
     insertSensor dlg;
